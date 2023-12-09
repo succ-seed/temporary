@@ -1,3 +1,3 @@
-### THIS IS FIRST EFFORT
-
-trying to learn how to do all these thingsss, kinda confusing but currently installing and setting up git bash in my pc
+NOTHING HERE,
+JUST A WAY FOR ME TO SEE CHANGES IN CODES WHILE I LEARN,
+CONCEPTS LIKE DATA STRUCTURE AND ALL DATTTT
