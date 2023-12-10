@@ -13,10 +13,13 @@ class shop
     int itemid[100];
     int itemprice[100];
     int counter;
+    string name;
 
 public:
     void initcounter(void)
     {
+        std::cout << "" << std::endl;
+
         counter++;
     }
 };
