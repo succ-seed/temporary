@@ -47,8 +47,8 @@ int main()
     complex d(4, 5); //* parameters will be defined as real and imaginary automatically, cause its first case
     complex e(4, 5); //* parameters will be defined as b.real and b.imaginary
 
-    complex c = a + b + d + e;
-    // complex c = a.operator+(b);  this is that a+b actually meansss
+    // complex c = a + b + d + e;
+    complex c = a.operator+(b).operator+(d).operator+(e);
 
     c.show();
 }
