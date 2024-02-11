@@ -13,13 +13,9 @@ public:
 
     complex(int re, int im)
     {
+        // parameterized constructor to assign value to real and imaginary
         real = re;
         imaginary = im;
-    }
-
-    void show()
-    {
-        std::cout << real << "+" << imaginary << "i" << std::endl;
     }
 
     complex operator+(complex b)
@@ -35,6 +31,11 @@ public:
         temp.imaginary = imaginary + b.imaginary; // imaginaary automatically auxa from first object
 
         return temp;
+    }
+
+    void show()
+    {
+        std::cout << real << "+" << imaginary << "i" << std::endl;
     }
 };
 
