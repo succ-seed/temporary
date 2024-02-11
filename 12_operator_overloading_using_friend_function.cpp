@@ -22,7 +22,7 @@ public:
         std::cout << real << "+" << imaginary << "i" << std::endl;
     }
 
-    complex operator+(complex b)
+    friend complex operator+(complex a, complex b)
     {
         // creating temporary instance of class inside of same class nai
         complex temp;
@@ -31,8 +31,8 @@ public:
         //? that is real and imaginary will be passed here from first object
         // for friend function, we have to do : friend complex operator+(complex b, complex d)
 
-        temp.real = real + b.real;                // real automatically aauxa from first object
-        temp.imaginary = imaginary + b.imaginary; // imaginaary automatically auxa from first object
+        temp.real = a.real + b.real;                // real automatically aauxa from first object
+        temp.imaginary = a.imaginary + b.imaginary; // imaginaary automatically auxa from first object
 
         return temp;
     }
@@ -47,7 +47,7 @@ int main()
     complex d(4, 5); //* parameters will be defined as real and imaginary automatically, cause its first case
     complex e(4, 5); //* parameters will be defined as b.real and b.imaginary
 
-    // complex c = a + b + d + e;
-    complex c = a.operator+(b).operator+(d).operator+(e);
+    complex c = a + b + d + e;
+    // complex c = a.operator+(b).operator+(d).operator+(e);
     c.show();
 }
